@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaduk Computer Accessories Shop</title>
+    <link rel="stylesheet" type="text/css" href="Assignment 1.css">
+
+</head>
+<body>
+
+    <nav class="navmenu">
+        <div class="navtopic"><h1 style="color: bisque;">Kaduk Store</h1></div>
+        <div class="navul">
+          <li><a href="Home.html" class="li1">Home</a></li>
+          <li><a href="About.html" class="li1">About</a></li>
+          <li><a href="Product.html" class="li1">Products</a></li>
+          <li><a href="Cart.html" class="li1">Pricings</a></li>
+          <li><a href="Feedback.html" class="li1">Feedback</a></li>
+        </div>
+      </nav>
+
+    <div class="products">
+    <h2>Our Products</h2>
+    <div class="product-container">
+      <div class="product">
+        <img src="keyboard 2.png" style="height: 200px; width: 310px; margin-bottom: 10px;">
+        <h3> AULA Mechanical Gaming Keyboard</h3>
+        <button class="buy-button" data-product="AULA Mechanical Gaming Keyboard">Buy</button>
+      </div>
+      <div class="product">
+        <img src="keyboard 1.png" style="height: 155px; margin-bottom: 55px; width: 310px;">
+        <h3>Razer BlackWidow Essential Mechanical Keyboard</h3>
+        <button class="buy-button" data-product="Razer BlackWidow Essential Mechanical Keyboard">Buy</button>
+      </div>
+      <div class="product">
+        <img src="keyboard 3.jpg" style="height: 210px;">
+        <h3>Logitech G412 Wired Gaming Keyboard</h3>
+        <button class="buy-button" data-product="Logitech G412 Wired Gaming Keyboard">Buy</button>
+      </div>
+      <div class="product">
+        <img src="aula head.png" style="height: 220px;width: 250px;">
+        <h3>Aula S6 Tri-mode Headset</h3>
+        <button class="buy-button" data-product="Aula S6 Tri-mode Headset">Buy</button>
+      </div>
+      <div class="product">
+        <img src="razer head.png" style="height: 220px;width: 250px;">
+        <h3>Razer Kraken Wired Headset</h3>
+        <button class="buy-button" data-product="Razer Kraken Wired Headset">Buy</button>
+      </div>
+      <div class="product">
+        <img src="logi head.webp" style="height: 220px;width: 250px;">
+        <h3>Logitech Zonevibe 7 Headset</h3>
+        <button class="buy-button" data-product="Logitech Zonevibe 7 Headset">Buy</button>
+      </div>
+      <div class="product">
+        <img src="aula mouse.png" style="height: 220px;width: 250px;">
+        <h3>Aula SC-300 Wireless Mouse</h3>
+        <button class="buy-button" data-product="Aula SC-300 Wireless Mouse">Buy</button>
+      </div>
+      <div class="product">
+        <img src="razer mouse.webp" style="height: 220px;width: 250px;">
+        <h3>Razer Mamba Wireless Mouse</h3>
+        <button class="buy-button" data-product="Razer Mamba Wireless Mouse">Buy</button>
+      </div>
+      <div class="product">
+        <img src="logi mouse.png" style="height: 220px;width: 250px;">
+        <h3>Logitech G304 Mouse</h3>
+        <button class="buy-button" data-product="Logitech G304 Mouse">Buy</button>
+      </div>
+    </div>
+
+    <p class="viewproduct">You can check the price in the pricings tab or click the button below!</p>
+    <button class="viewprice"><a href="Cart.html" style="text-decoration: none; color: bisque;"><b>View Prices</b></a></button>
+
+<script>
+        document.querySelectorAll('.buy-button').forEach(button => {
+        button.addEventListener('click', (event) => {
+        const productName = event.target.getAttribute('data-product');
+        alert(`You have selected to buy: ${productName}`);
+    });
+});
+
+
+</script>
+</body>
